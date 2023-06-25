@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 
 /* Root Variables */
@@ -11,7 +12,7 @@
 
 /* Global Variables */
 
-*, ::after, ::before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,10 +54,15 @@ h3 {
     background: var(--bg-color);
 }
 
+.header .sticky {
+	border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
 .header .logo {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 800;
     color: var(--color);
+	font-family: 'Great Vibes', 'Poppins', sans-serif;
 }
 
 .navbar a {
@@ -70,8 +76,16 @@ h3 {
     text-transform: uppercase;
 }
 
-.navbar a:hover {
+.navbar a:hover
+/* ,.navbar a.active */
+{
 	color: #00d5ff;
+}
+
+#menu-icon {
+	font-size: 3.6rem;
+	color: #fff;
+	display: none;
 }
 
 /* Section */
@@ -186,7 +200,7 @@ section {
 /* Image */
 .image-container img {
     border-radius: 4rem;
-	box-shadow: 0 1rem 1rem rgb(121, 121, 255);
+	box-shadow: 0 1rem 1rem #ff5252;
 	width: 35vw;
 	animation: floatImage 4s ease-in-out infinite;
 }
@@ -299,7 +313,7 @@ section {
 
 .footer-iconTop a i {
 	font-size: 2.4rem;
-	color: var(--second-color);
+	color: #000;
 }
 
 /* Media Queries */
@@ -309,8 +323,8 @@ section {
 	}
 }
 
-@media (max-width: 991px) {
 
+@media (max-width: 991px) {
 	.header {
 		padding: 2rem 3%;
 	}
@@ -329,22 +343,48 @@ section {
 }
 
 @media (max-width: 768px) {
+	
+	#menu-icon {
+		display: block;
+	}
 
-    .header {
-        display: block;
-        text-align: center;
-    }
+	.header .logo {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+
+	.navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 1rem 3%;
+		background: var(--bg-color);
+		border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+		display: none;
+	}
+
+	.navbar.active {
+		display: block;
+	}
 
 	.navbar a {
-		display: inline-block;
-        padding: 15px 0;
+		display: block;
+		font-size: 2rem;
+		margin: 3rem 0;
 	}
 
 	.home {
 		flex-wrap: wrap;
+		padding: 0 2rem;
 	}
 
-	.home-img{
+	.home-content h1 {
+		font-size: 5rem;
+	}
+
+	.home-img {
 		width: 70vw;
 		margin-top: 4rem;
 	}
@@ -354,6 +394,10 @@ section {
 @media (max-width: 450px) {
 	html {
 		font-size: 50%;
+	}
+
+	.contact form .input-box input {
+		width: 100%;
 	}
 
 	.footer {
@@ -367,7 +411,7 @@ section {
 }
 
 @media (max-width: 365px) {
-	.home-img img {
+	.home-img img{
 		width: 90vw;
 	}
 
