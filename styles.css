@@ -121,7 +121,7 @@ section {
     color: var(--color);
 }
 
-.welcome-text .text-wrap {
+.text-wrap {
     position: relative;
     display: inline-flex;
     overflow: hidden;
@@ -202,6 +202,7 @@ section {
     transition: 0.5s ease-in all;
 }
 
+/* Image Keyframes */
 @keyframes floatImage {
 	0% {
 		transform: translateY(0);
@@ -214,4 +215,62 @@ section {
 	100% {
 		transform: translateY(0);
 	}
+}
+
+/* Contact Section */
+.contact{
+    background: var(--second-bgcolor);
+    text-align: center;
+}
+
+
+.divider {
+    height: 250px;
+    max-height: 500px;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+}
+
+.contact-info{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info .email {
+    color: var(--second-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 50%;
+}
+
+.email:hover {
+    color: var(--color);
+}
+
+.social-media {
+    width: 50%;
+}
+
+.social-media a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	background: transparent;
+	border: 0.2rem solid #00d5ff;
+	border-radius: 50%;
+	font-size: 2rem;
+	color: #00d5ff;
+	margin: 3rem 1.5rem 3rem 0;
+	transition: 0.5s ease;
+}
+
+.social-media a:hover {
+	background: #00d5ff;
+	color: #000;
+	box-shadow: 0 0 1rem #00d5ff;
 }
