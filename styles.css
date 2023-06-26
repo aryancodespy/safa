@@ -250,6 +250,8 @@ section {
 	padding: 0 20px;
 	margin: 1rem 0;
 	transition: 0.3s ease;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .skill-list h3:hover {
@@ -360,6 +362,43 @@ section {
 	html {
 		font-size: 55%;
 	}
+
+	.contact {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contact-info {
+		flex-direction: column;
+	}
+
+	.contact-info .email {
+		margin: 8rem 0;
+	}
+
+	.divider {
+		display: none;
+	}
+
+	.social-media {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.social-media a {
+		padding: 2.5rem;
+		margin: 2rem;
+	}
+
+	.skills {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
 }
 
 
@@ -423,8 +462,8 @@ section {
 	}
 
 	.home-content {
-		margin-bottom: 0;
 		width: 100%;
+		padding-bottom: 0;
 	}
 
 	.home-content h1 {
@@ -433,13 +472,9 @@ section {
 
 	.home-content p {
 		padding: 0 ;
-		text-align: justify;
+		text-align: center;
 	}
 
-	.image-container {
-		margin-top: 4rem;
-	}
-	
 	.image-container img {
 		border-radius: 1rem;
 	}
@@ -458,6 +493,7 @@ section {
 	.contact form .input-box input {
 		width: 100%;
 	}
+
 
 	.footer {
 		flex-direction: column-reverse;
