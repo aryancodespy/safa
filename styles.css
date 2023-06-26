@@ -63,6 +63,7 @@ h3 {
     font-weight: 800;
     color: var(--color);
 	font-family: 'Great Vibes', 'Poppins', sans-serif;
+	transition: 0.5s ease;
 }
 
 .navbar a {
@@ -76,10 +77,10 @@ h3 {
     text-transform: uppercase;
 }
 
-.navbar a:hover
+.navbar a:hover, .logo:hover
 /* ,.navbar a.active */
 {
-	color: #00d5ff;
+	color: #ff5252;
 }
 
 #menu-icon {
@@ -267,18 +268,19 @@ section {
 	width: 4rem;
 	height: 4rem;
 	background: transparent;
-	border: 0.2rem solid #00d5ff;
+	border: 0.2rem solid #fff;
 	border-radius: 50%;
 	font-size: 2rem;
-	color: #00d5ff;
+	color: #fff;
 	margin: 3rem 1.5rem 3rem 0;
 	transition: 0.5s ease;
 }
 
 .social-media a:hover {
-	background: #00d5ff;
-	color: #000;
-	box-shadow: 0 0 1rem #00d5ff;
+	background: #ff5252;
+	color: #fff;
+	box-shadow: 0 0 1rem #ff5252;
+	border-color: #ff5252;
 }
 
 
@@ -302,18 +304,18 @@ section {
 	justify-content: center;
 	align-items: center;
 	padding: 0.8rem;
-	background: #00d5ff;
+	background: #ff5252;
 	border-radius: 0.8rem;
 	transition: 0.5s ease;
 }
 
 .footer-iconTop a:hover {
-	box-shadow: 0 0 1rem #00d5ff;
+	box-shadow: 0 0 1rem #ff5252;
 }
 
 .footer-iconTop a i {
 	font-size: 2.4rem;
-	color: #000;
+	color: #fff;
 }
 
 /* Media Queries */
