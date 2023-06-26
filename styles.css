@@ -424,6 +424,7 @@ section {
 
 	.home-content {
 		margin-bottom: 0;
+		width: 100%;
 	}
 
 	.home-content h1 {
@@ -436,7 +437,6 @@ section {
 	}
 
 	.image-container {
-		width: 70vw;
 		margin-top: 4rem;
 	}
 	
