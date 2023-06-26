@@ -202,7 +202,7 @@ section {
 
 /* Image */
 .image-container img {
-    border-radius: 4rem;
+    border-radius: 2rem;
 	box-shadow: 0 1rem 1rem #ff5252;
 	width: 35vw;
 	animation: floatImage 4s ease-in-out infinite;
@@ -431,12 +431,17 @@ section {
 	}
 
 	.home-content p {
-		padding: 0;
+		padding: 0 ;
+		text-align: justify;
 	}
 
-	.home-img {
+	.image-container {
 		width: 70vw;
 		margin-top: 4rem;
+	}
+	
+	.image-container img {
+		border-radius: 1rem;
 	}
 
 	.skill-list {
@@ -465,7 +470,7 @@ section {
 }
 
 @media (max-width: 365px) {
-	.home-img img{
+	.image-container img{
 		width: 90vw;
 	}
 
