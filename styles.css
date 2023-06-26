@@ -417,7 +417,8 @@ section {
 	.home {
 		flex-wrap: wrap;
 		flex-direction: column;
-		padding: 10rem 2rem;
+		padding: 0 2rem;
+		padding-bottom: 50px;
 		text-align: center;
 	}
 
