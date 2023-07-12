@@ -246,7 +246,7 @@ section {
 }
 
 .skill-list h3 {
-	border: 1px solid #fff;
+	border: 1px solid var(--second-bgcolor);
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -257,13 +257,14 @@ section {
 	transition: 0.3s ease;
 	text-transform: uppercase;
 	font-weight: 600;
-	box-shadow: 0 0 1rem #ff5252;
+	box-shadow: 0 0 1rem #44f;
 	transition: 0.3s ease;
 }
 
 .skill-list h3:hover {
 	transform: translateY(-10px);
 	border-radius: 1rem;
+	box-shadow: 0 0 1rem #ff5252;
 }
 
 /* Contact Section */
