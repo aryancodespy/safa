@@ -88,6 +88,11 @@ h3 {
 	font-size: 3.6rem;
 	color: #fff;
 	display: none;
+	transition: 0.3s ease-in-out;
+}
+
+#menu-icon:hover {
+	color: #ff5252;
 }
 
 /* Section */
@@ -182,7 +187,7 @@ section {
 
 .cv-btn::before {
     background: #44f;
-    border-radius: 0.3em;
+    border-radius: 0.3rem;
     box-shadow: 0 0 1rem #44f;
     top: 0;
     width: 0;
@@ -241,7 +246,7 @@ section {
 }
 
 .skill-list h3 {
-	border: 1px solid #fff;
+	border: 1px solid var(--second-bgcolor);
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -252,12 +257,14 @@ section {
 	transition: 0.3s ease;
 	text-transform: uppercase;
 	font-weight: 600;
+	box-shadow: 0 0 1rem #44f;
+	transition: 0.3s ease;
 }
 
 .skill-list h3:hover {
-	box-shadow: 0 1rem 1rem #44f;
-	background: #44f;
 	transform: translateY(-10px);
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem #ff5252;
 }
 
 /* Contact Section */
